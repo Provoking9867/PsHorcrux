@@ -45,3 +45,4 @@ The Recovery Room utilizes strict validation to guarantee mathematical integrity
   •	The shredder executes a Department of Defense (DoD 5220.22-M) compliant 3-pass wipe, writing random cryptographic bytes over the physical disk sectors before deleting the file pointer.
   •	Performs a bottom-up directory sweep to safely remove all nested subfolders.
 
+Disclaimer: This project has (lots of) AI generated code. 
