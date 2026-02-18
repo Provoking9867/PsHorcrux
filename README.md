@@ -26,13 +26,13 @@ The Recovery Room utilizes strict validation to guarantee mathematical integrity
     o	Return to the Horcrux window, click an empty Shard field, and paste.
     o	Press the Tab key to jump to the next empty field and repeat until all boxes are filled.
 
-4.	Click JOIN. The engine runs a strict validation check:
-  o	Blocks empty fields.
-  o	Blocks illegal characters, spaces, and binary artifacts.
-  o	Prevents literal shard duplication (pasting the same string twice).
-  o	Prevents index duplication (submitting two different shards that share the same ID number).
+  4.	Click JOIN. The engine runs a strict validation check:
+    o	Blocks empty fields.
+    o	Blocks illegal characters, spaces, and binary artifacts.
+    o	Prevents literal shard duplication (pasting the same string twice).
+    o	Prevents index duplication (submitting two different shards that share the same ID number).
 
-5.	Upon successful validation, the GF(2^8) engine mathematically reconstructs and displays your original Diceware passkey. The Windows Camera app is automatically terminated.
+  5.	Upon successful validation, the GF(2^8) engine mathematically reconstructs and displays your original Diceware passkey. The Windows Camera app is automatically terminated.
 
 4. Workflow III: Decrypting the Payload
   1.	With the recovered key populated in the main window, click 3. DECRYPT PAYLOAD.
@@ -44,5 +44,13 @@ The Recovery Room utilizes strict validation to guarantee mathematical integrity
   •	Select a target folder to permanently destroy its contents.
   •	The shredder executes a Department of Defense (DoD 5220.22-M) compliant 3-pass wipe, writing random cryptographic bytes over the physical disk sectors before deleting the file pointer.
   •	Performs a bottom-up directory sweep to safely remove all nested subfolders.
+
+6. Workflow V: Nuclear Wipe
+  •	Click this to shred EVERY file in the %HOMEDRIVE%%HOMEPATH%\horcrux directory except for the script and hash file. This includes dependant libararies (ZXing.dll, etc.)
+
+Other Notes
+  •	Creating a Vault temporarily triples the required footprint of the protected payload until the staging files are cleared.
+
+
 
 Disclaimer: This project has (lots of) AI generated code. 
